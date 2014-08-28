@@ -114,6 +114,8 @@ namespace Aula3{
             }
             Console.Write("\n");
             //fim exercício 6
+
+            Console.ReadKey();
         }
     }
 }
