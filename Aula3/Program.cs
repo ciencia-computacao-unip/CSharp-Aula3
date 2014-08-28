@@ -59,6 +59,25 @@ namespace Aula3{
                 Console.WriteLine("\nO número {0} não é múltiplo de {1}.", primeiro_numero, segundo_numero);                
             }
             //fim exercício 3
+
+            Console.WriteLine("\n\n\n");
+
+            //início exercício 4
+            Console.WriteLine("4) Escreva um programa que leia dois números e exiba mensagem informando o valor do maior numero e o valor do menor número. Se os dois números forem iguais, o programa deve exibir mensagem informando este fato.\n");
+            Console.Write("Digite o primeiro número: ");
+            int ex4_primeiro_numero,ex4_segundo_numero;
+            ex4_primeiro_numero = int.Parse(Console.ReadLine());
+            Console.Write("Digite o segundo número: ");
+            ex4_segundo_numero = int.Parse(Console.ReadLine());
+            if (ex4_primeiro_numero > ex4_segundo_numero){
+                Console.WriteLine("\n{0} é maior que {1}.", ex4_primeiro_numero,ex4_segundo_numero);
+            }
+            else if (ex4_primeiro_numero == ex4_segundo_numero){
+                Console.WriteLine("\nOs números são iguais. Os dois são {0}", ex4_primeiro_numero);
+            }else{
+                Console.WriteLine("{0} é maior que {1}", ex4_segundo_numero, ex4_primeiro_numero);
+            }
+            //fim exercício 4
         }
     }
 }
