@@ -28,6 +28,20 @@ namespace Aula3{
                 Console.Write("\n{0} foi Reprovado! Média: {1}", nome_aluno, nota_final);
             }
             //fim exercício 1
+
+            Console.WriteLine("\n\n\n");
+
+            //início exercício 2
+            Console.WriteLine("2) Escreva um programa que leia um número e exiba mensagem informando se o numero é par ou ímpar.\n");
+            Console.Write("Digite um número: ");
+            int numero;
+            numero = int.Parse(Console.ReadLine());
+            if (numero % 2 == 0){
+                Console.WriteLine("{0} é par!", numero);
+            }else{
+                Console.WriteLine("{0} é impar!", numero);
+            }
+            //fim exercício 2
         }
     }
 }
