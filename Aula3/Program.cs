@@ -96,6 +96,24 @@ namespace Aula3{
             }
             Console.Write("\n");
             //fim exercício 5
+
+            Console.WriteLine("\n\n\n");
+
+            //início exercício 6
+            Console.WriteLine("6) Escreva um programa que leia três números inteiros e ao final exiba eles em ordem decrescente.\n");
+            int ex6_quantidade_numeros = 3;
+            int[] ex6_numeros = new int[ex6_quantidade_numeros];
+            for (int i = 1; i <= ex6_quantidade_numeros; i++){
+                Console.Write("Digite o {0}º número:", i);
+                ex6_numeros[i - 1] = int.Parse(Console.ReadLine());
+            }
+            ex6_numeros = ex6_numeros.OrderByDescending(c => c).ToArray();
+            Console.Write("\nNúmeros em ordem Crescente: ");
+            for (int i = 1; i <= ex6_quantidade_numeros; i++){
+                Console.Write("{0} ", ex6_numeros[i - 1]);
+            }
+            Console.Write("\n");
+            //fim exercício 6
         }
     }
 }
