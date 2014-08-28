@@ -42,6 +42,23 @@ namespace Aula3{
                 Console.WriteLine("{0} é impar!", numero);
             }
             //fim exercício 2
+
+            Console.WriteLine("\n\n\n");
+
+            //início exercício 3
+            Console.WriteLine("3) Escreva um programa que leia dois números e exiba mensagem informando se o primeiro número lido é múltiplo do segundo.\n");
+            Console.Write("Digite o primeiro número: ");
+            int primeiro_numero, segundo_numero;
+            primeiro_numero = int.Parse(Console.ReadLine());
+            Console.Write("Digite o segundo número: ");
+            segundo_numero = int.Parse(Console.ReadLine());
+            if (primeiro_numero % segundo_numero == 0){
+                Console.WriteLine("\nO número {0} é múltiplo de {1}.", primeiro_numero, segundo_numero);
+            }
+            else{
+                Console.WriteLine("\nO número {0} não é múltiplo de {1}.", primeiro_numero, segundo_numero);                
+            }
+            //fim exercício 3
         }
     }
 }
