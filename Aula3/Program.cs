@@ -78,6 +78,24 @@ namespace Aula3{
                 Console.WriteLine("{0} é maior que {1}", ex4_segundo_numero, ex4_primeiro_numero);
             }
             //fim exercício 4
+
+            Console.WriteLine("\n\n\n");
+
+            //início exercício 5
+            Console.WriteLine("5) Escreva um programa que leia três números inteiros e ao final exiba eles em ordem crescente.\n");
+            int quantidade_numeros = 3;
+            int[] numeros = new int[quantidade_numeros];
+            for (int i = 1; i <= quantidade_numeros; i++){
+                Console.Write("Digite o {0}º número:",i);
+                numeros[i - 1] = int.Parse(Console.ReadLine());
+            }
+            Array.Sort(numeros);
+            Console.Write("\nNúmeros em ordem Crescente: ");
+            for (int i = 1; i <= quantidade_numeros; i++){
+                Console.Write("{0} ",numeros[i-1]);
+            }
+            Console.Write("\n");
+            //fim exercício 5
         }
     }
 }
